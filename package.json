@@ -1,0 +1,49 @@
+{
+  "name": "@gency/react-use-environment",
+  "version": "1.0.0",
+  "description": "React Hook to load runtime environment data from environment.json",
+  "author": "Gency Digital <hello@gency.com.au>",
+  "license": "ISC",
+  "main": "dist/useEnvironment.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ttoohey/react-use-environment.git"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "clean": "rm -rf dist *.tgz",
+    "prepare": "npm run clean && npm run build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babel-preset-minify": "^0.5.0",
+    "eslint": "^5.12.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "^1.15.3"
+  },
+  "dependencies": {
+    "fetch-suspense": "^1.0.2",
+    "react": "^16.7.0-alpha.2",
+    "react-dom": "^16.7.0-alpha.2"
+  },
+  "babel": {
+    "comments": false,
+    "presets": [
+      "@babel/preset-env",
+      "minify"
+    ]
+  }
+}
