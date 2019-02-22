@@ -72,10 +72,10 @@ const Root = () => {
     </ApolloProvider>
   );
 };
-ReactDom.render(
-  <Suspense fallack={<Loading />}>
+ReactDOM.render(
+  <React.Suspense fallback={<Loading />}>
     <Root />
-  </Suspense>,
+  </React.Suspense>,
   document.getElementById("root")
 );
 ```
