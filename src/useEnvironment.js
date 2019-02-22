@@ -14,11 +14,10 @@ function useEnvironment(options = {}) {
   try {
     const env = useFetch(href);
     if (suspense) {
-      return env
+      return env;
     } else {
-      return [env, false, null]
+      return [env, false, null];
     }
-    return env;
   } catch (e) {
     if (e instanceof Promise) {
       if (suspense) {
