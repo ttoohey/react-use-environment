@@ -1,6 +1,6 @@
 {
   "name": "@gency/react-use-environment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Hook to load runtime environment data from environment.json",
   "author": "Gency Digital <hello@gency.com.au>",
   "license": "ISC",
