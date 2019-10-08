@@ -11,9 +11,7 @@ See [issue #578](https://github.com/facebook/create-react-app/issues/578) for so
 Install
 
 ```sh
-npm install @gency/react-use-environment
-# or
-npm install htttps://try.gency.com.au/npm/gency-react-use-environment-latest.tgz
+npm install @ttoohey/react-use-environment
 ```
 
 Create an `environment.json` file in the public/ folder
