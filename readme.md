@@ -53,10 +53,10 @@ The environment can be loaded in any React component. For example, in
 
 ```js
 // src/index.js
-import React, { Suspense } from "react";
+import React from "react";
 import ApolloClient from "apollo-boost";
-import { ApolloProvider } from "react-apollo-hooks";
-import useEnvironment from "@gency/react-use-environment";
+import { ApolloProvider } from "@apollo/react-hooks";
+import useEnvironment from "@ttoohey/react-use-environment";
 
 import App from "./App";
 import Loading from "./Loading";
@@ -78,7 +78,7 @@ ReactDOM.render(
 );
 ```
 
-A React Suspense component must be used as `useEnvironment` will
+A React.Suspense component must be used as `useEnvironment` will
 throw a promise while loading the JSON file.
 
 # API
